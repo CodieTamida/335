@@ -1,0 +1,17 @@
+Cashiers_algorithm(D, n) 
+	count <- 0
+	coins <- []
+
+	FOR i <- D.size() - 1 down to 0
+
+		WHILE (n >= D[i])
+
+			n <- n - D[i]
+			count++
+			append(D[i[) to coins
+
+		IF n = 0 BREAK
+
+	PRINT coins
+	RETURN count
+			

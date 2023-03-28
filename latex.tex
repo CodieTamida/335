@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\title{Example}
+\section{introduction}
+
+\author{Codie Tamida}
+Man i'm typing words but I need math 
+    \begin{equation}
+    \begin{split}
+    Time &= \frac{n}{k} + \frac{n}{k} = \frac{2n}{k} + \frac{3n}{k}+\cdots+\frac{kn}{k}\\
+     &= \sum_{i = 2}^{k} i \frac{n}{k}\\
+     &= \frac{n}{k} \sum_{i =2}^{k} i\\
+     &= \frac{n}{k} \frac{(k+2)(k-1)}{2}\\
+     &=O(nk)
+    \end{split}
+    \end{equation}
+
+    \begin{equation}
+    \begin{split}
+        Base\;Case: T(1) &= (1) \log(1) + (1) = 1\\
+        &= T(1) =1\\
+        Induction\;hypothesis: For\;any\;number\;n > 1, n \log n + n\;is\;true\\
+        Inductive\;Step:\;T(n) &= (n) \log(n) +(n)\\
+        T(n) &= n \log n + n\\
+        T(n) &= 2T(\frac{n}{2}) + n\\
+        &= 2((\frac{n}{2}) \log (\frac{n}{2}) + (\frac{n}{2})) + n\\
+        &= n \log (\frac{n}{2}) + n + n\\
+        &= n \log n - n + n + n\\
+        &= n \log n + n
+    \end{split}
+    \end{equation}
+\end{document} 
